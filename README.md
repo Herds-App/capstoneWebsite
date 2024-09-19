@@ -1,2 +1,2 @@
 # website
-The official herd website.
+Capstone Website, used only for the capstone project.
