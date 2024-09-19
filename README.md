@@ -1,1 +1,2 @@
-# capestoneWebsite
+# website
+The official herd website.

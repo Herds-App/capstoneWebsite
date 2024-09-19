@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta content="Herds" property="og:title" />
+		<meta content="Connecting College Organizations" property="og:description" />
+		<meta content="https://herds.app" property="og:url" />
+		<meta content="https://www.herds.app/assets/img/icon.webp" property="og:image" />
+		<meta content="#545454" data-react-helmet="true" name="theme-color" />
+		
+		<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+		<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+		<!--Import Bootstrap-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<!--Import Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		
+		<title>Herds Capstone Project</title>
+
+		<style>
+
+			body {
+				background-color: #111;
+			}
+			
+			.navbar {
+				font-family: Lato;
+				font-weight: 300;
+				backdrop-filter: blur(5px);
+			}
+
+			@media (min-width: 992px) {
+				.navbar-nav {
+					background-color: #222;
+					border-radius: 30px;
+					border: 1px solid #333;
+					padding: 3px;
+				}
+				.stores {
+					margin-left: 50px;
+				}
+				.hero {
+					height: 80vh;
+				}
+			}
+			
+			.tagline {
+				font-family: "Poppins", sans-serif;
+				font-weight: 300;
+				font-style: normal;
+				color: #7a7a7a;
+				font-size: 15px;
+			}
+			
+			.herotext {
+				color: #fff;
+				font-size: 100px;
+				font-family: League Spartan;
+				font-weight: 600;
+				letter-spacing: -7px;
+			}
+
+			.team {
+				margin-top: 50px;
+			}
+
+			.team h1 {
+				font-family: League Spartan;
+			}
+
+			.teamBox {
+				display: inline-block;
+				width: 200px;
+				height: 300px;
+				margin: 10px;
+				color: #fff;
+				background-color: #545454;
+				
+				box-shadow: 0px 5px 24px #363636;
+			}
+
+			.teamBox img {
+				margin-top: 20px;
+			}
+
+			.teamBox h3 {
+				margin-top: 10px;
+			}
+
+			.upcoming {
+				margin-top: 30px;
+			}
+
+			.meetings {
+				margin-top: 30px;
+			}
+
+			.meetings h1 {
+				font-family: League Spartan;
+			}
+
+			.pm {
+				margin-top: 30px;
+			}
+
+			.pm h1 {
+				font-family: League Spartan;
+			}
+
+			td, th {
+				border: 1px solid #545454;
+				text-align: left;
+				padding: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar sticky-top navbar-expand-lg" aria-label="Fourth navbar example">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="assets/img/logo.webp" alt="Herds logo" draggable="false" width="150"><br>
+					<span class="tagline">Explore. Connect. Unite.</span>
+				</a>
+				<h5>Capstone Project</h5>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="text-center">
+				<label class="herotext">Connecting Ca<img loading="lazy" width="150" height="150" decoding="async" data-nimg="1" style="color:transparent" src="assets/img/icon.webp" draggable="false">pus Orgs.</label>
+				<br>
+				<span style="font-size:20px" class="tagline">Explore. Connect. Unite.</span>
+
+				<div class="team text-center">
+					<h1>The Team</h1>
+					<div class="teamBox">
+						<img width="80%" src="assets/img/chase.jpg" draggable="false"></img>
+						<h3>Chase Bonham</h3>
+						<small>Project Leader and API Developer</small>
+					</div>
+					<div class="teamBox">
+						<img width="80%" src="assets/img/luke.jpg" draggable="false"></img>
+						<h3>Luke Dekan</h3>
+						<small>Front-End Developer</small>
+					</div>
+					<div class="teamBox">
+						<img width="80%" src="assets/img/joe.jpg" draggable="false"></img>
+						<h3>Joseph Hall</h3>
+						<small>Report & Presentation Management</small>
+					</div>
+				</div>
+
+				<div class="pm text-center">
+					<h1>Project Management</h1>
+					<a href="https://herdscapestone.atlassian.net/">
+						<button type="button" class="btn btn-outline-secondary">Jira Link</button>
+					</a>
+				</div>
+
+				<div class="upcoming text-center align-items-center justify-content-center">
+					<h1>Upcoming Schedule</h1>
+					<table>
+						<tr>
+							<th>Date</th>
+							<th>Meetings & Activity</th>
+						</tr>
+						<tr>
+							<td>Sep 23rd</td>
+							<td>Group Presentation</td>
+						</tr>
+						<tr>
+							<td>Sep 30th</td>
+							<td>Review Stage 2, revise project description based on Stage 2 requirements, analyze system and also put into a set of modules. (Objects or subsystems.)</td>
+						</tr>
+						<tr>
+							<td>Oct 2nd</td>
+							<td>UML diagram construction. (Report)</td>
+						</tr>
+						<tr>
+							<td>Oct 4th</td>
+							<td>UML diagram construction, with explanation of each diagram. (Report)</td>
+						</tr>
+						<tr>
+							<td>Oct 7th</td>
+							<td>Explanation of each diagram, creation of low-fidelity prototype. (Report)</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="meetings text-center"></div>
+					<h1>Team Meetings & Activities</h1>
+					<table>
+						<tr>
+							<th>Date</th>
+							<th>Meetings & Activity</th>
+						</tr>
+						<tr>
+							<td>Aug 23rd - 30th 2024</td>
+							<td>Group formation</td>
+						</tr>
+						<tr>
+							<td>Sep 2nd - 4th 2024</td>
+							<td>Herds Idea formed along with feature set developed</td>
+						</tr>
+						<tr>
+							<td>Sep 6th 2024</td>
+							<td>Roles assigned</td>
+						</tr>
+						<tr>
+							<td>Sep 9th 2024</td>
+							<td>Project description created</td>
+						</tr>
+						<tr>
+							<td>Sep 11th 2024</td>
+							<td>Herds approved, Interviews started</td>
+						</tr>
+						<tr>
+							<td>Sep 13th 2024</td>
+							<td>Project report in production. (Description of project, with features and explanations. Some interviews received.) (Group meeting.)</td>
+						</tr>
+						<tr>
+							<td>Sep 16th 2024</td>
+							<td>All interviews received, project report and presentation in production. (Interviews added to report, as well as summary of interviews. Outline of presentation slides filled out, with concept of idea, interviews, video of summary of interviews (Joseph Hall) and features of application.)</td>
+						</tr>
+						<tr>
+							<td>Sep 18th 2024</td>
+							<td>SRS based on IEEE Std 830-1998 added to report, completing it. Concluding slide added to presentation, completing it.</td>
+						</tr>
+						<tr>
+							<td>Sep 19th 2024</td>
+							<td>Group webpage is made, with members and their roles, meeting and activities and upcoming schedules. Report and Presentation are turned into blackboard. (Group meeting.)</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<br>
+			<div style="text-align: center;" class="container-fluid d-flex align-items-center justify-content-center">
+				<p>© Herds 2024. All Rights Reserved.<br>
+				Disclaimer: Not all team members on this page are apart of Herds LLC.</p>
+			</div>
+		</div>
+		
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>
