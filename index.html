@@ -145,6 +145,21 @@
 				
 				box-shadow: 0px 5px 24px #363636;
 			}
+			
+			@keyframes Logo-Animation
+			{
+				0% {
+					transform: translateX(100%);
+					opacity: 0;
+				}
+				100% { 
+					transform: translateX(0%);
+					opacity: 1;
+				}
+			}
+			.animated-logo {
+				animation: Logo-Animation 1.2s ease-out;
+			}
 		</style>
 	</head>
 	<body>
@@ -160,7 +175,7 @@
 		
 		<div class="container">
 			<div class="text-center">
-				<label class="herotext">Connecting Ca<img loading="lazy" width="150" height="150" decoding="async" data-nimg="1" style="color:transparent" src="assets/img/icon.webp" draggable="false">pus Orgs.</label>
+				<label class="herotext">Connecting Ca<img class="animated-logo" loading="lazy" width="150" height="150" decoding="async" data-nimg="1" style="color:transparent" src="assets/img/icon.webp" draggable="false">pus Orgs.</label>
 				<br>
 				<span style="font-size:20px" class="tagline">Explore. Connect. Unite.</span>
 
