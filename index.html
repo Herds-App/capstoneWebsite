@@ -214,26 +214,94 @@
 				</div>
 
 				<div class="demoVideo text-center">
-					<h1>Demo Video</h1>
+					<h1>Stage 4 Demo Video</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jPn5XdQTN9A?si=5_U0KOrgyBB9fXyV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				<div class="demoVideo text-center">
+					<h1>Stage 3 Demo Video</h1>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/GntrhVWtVuk?si=hSTgvsShx2hJ3etY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 
-				<div class="upcoming text-center align-items-center justify-content-center">
-					<h1>Upcoming Schedule</h1>
-					<table>
-						<tr>
-							<th>Date</th>
-							<th>Meetings & Activity</th>
-						</tr>
-						<tr>
-							<td>TBA</td>
-							<td>Stage 3 Group Presentation</td>
-						</tr>
-						<tr>
-							<td>TBA - 1 day after presentation</td>
-							<td>Review Stage 4, revisit any questions, concerns, or comments from Stage 3 presentation</td>
-						</tr>
-					</table>
+				<div class="demoVideo text-center">
+					<h1>Installation Video</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Pkqunmzj5e4?si=1tF2PZsuQNQpXGU2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				<div class="install text-center">
+					<h1>Installation Instructions</h1>
+					<ol>
+						<li>Ensure that you have an updated Java Version on your machine "java --version" (23.0.1)</li>
+						<li>If you see the option between Windows, MacOS, and Linux Select your platform, otherwise move on to step 3</li>
+						<li>Ensure you have Visual Studio Code installed.</li>
+						<li>Click on Android as the type of application.</li>
+						<li>Follow the instructions to Install the Flutter SDK.</li>
+						<ol>
+							<li>Download the flutter installation bundle</li>
+							<li>Create a folder at C:\Users\{username} to install flutter to</li>
+							<li>Extract the flutter installation bundle to this location</li>
+							<li>Add the location\dev\flutter\bin to your PATH variables</li>
+						</ol>
+						<li>Follow the instructions to Configure Android development.</li>
+						<ol>
+							<li>Download <a href="https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7qA33ZYEU8phTeCxwzuKTWHXof1jy1NBqgCTqf1r1WWU4gXI8rdY2YaAuISEALw_wcB&gclsrc=aw.ds">Android Studio Ladybug.</a></li>
+							<li>Launch Android Studio and follow the setup wizard</li>
+							<li>Install the following components:</li>
+							<ul>
+								<li>Android SDK Platform, API 35.0.1</li>
+								<li>Android SDK Command-line Tools</li>
+								<li>Android SDK Build-Tools</li>
+								<li>Android SDK Platform-Tools</li>
+								<li>Android Emulator</li>
+							</ul>
+						</ol>
+						<li>Follow the instructions to Configure your target Android device.</li>
+						<ol>
+							<li>Enable VM acceleration on your device</li>
+							<li>Go to the More Actions dialog and click SDK Manager</li>
+							<li>Ensure “Show Package Details” is clicked</li>
+							<li>Click on the check mark next to Android 15 (“VanillaIceCream”)</li>
+							<li>Click apply and wait for the download to finish</li>
+							<li>Close out of the settings dialog</li>
+							<li>Got to the More Actions dialog and click Virtual Device Manager</li>
+							<li>Click the plus button</li>
+							<li>Select Medium Phone and click next</li>
+							<li>Select VanillaIceCream as the system image and click next</li>
+							<li>Click finish</li>
+							<li>In the VS code terminal run “flutter doctor –android-licenses” and agree to all the licenses</li>
+						</ol>
+						<li>Follow the instructions to Check your development setup.</li>
+						<ol>
+							<li>Run “flutter doctor” and ensure that the following have check boxes</li>
+							<ul>
+								<li>Flutter</li>
+								<li>Windows Version</li>
+								<li>Android Studio</li>
+								<li>Connected Device</li>
+								<li>Network resources</li>
+							</ul>
+							<li>If there are any issues troubleshoot using the flutter documentation</li>
+						</ol>
+						<li>Pull the latest release from HerdsApp Repo.</li>
+						<ol>
+							<li>Access the <a href="https://github.com/Herds-App/app">GitHub</a> and download the latest release.</li>
+							<li>If you do not have access to this repo, send robonham@ttu.edu an email with your github username, and he will give you access.</li>
+						</ol>
+						<li>Enter the repo folder using VS code.</li>
+						<li>In the bottom right corner of VS code, once you open a .dart file you will see “No device” Click on this and select (cold boot) Medium Phone.</li>
+						<li>Type “flutter run” into your terminal.</li>
+					</ol>
+				</div>
+
+				<div class="userManual text-center">
+					<h1>User Manual</h1>
+					<p>When opening Herds, the User will be prompted for their login information and if they do not have an account, there will be an option to register for one below. When registering for an account, the user will be prompted for their email address, phone number and password. This will ensure that the User’s information will remain secure and only accessible to them. Refresh and access tokens are also utilized so that once a User has logged in, they have the option to remain logged in, so they do not have to repeat the process above. The User’s profile will be public so anyone can see it, and the profile can contain whatever the User would like. For example, it will contain a profile picture, display name and username, organizations the User is a member of (Herds), as well as posts that the User has created.</p>
+					<p>Once logged in, you will be moved to the home page where the User will be able to see different feeds, and these feeds are attached to different Herds that they are a member of. The User will be able to see their own posts within the feeds, as well as other Users that are a member of the same Herd. A User will be able to tell which Herd they are currently in by the white highlighted tab at the top of the page. To create a new post within a Herd, the User will simply press the plus button towards the top of the screen, giving a prompt to fill with their message. Before this post is sent, it will be moderated to ensure the content of the post is appropriate. The User also has the option to “like” a post if they enjoyed the content of the post and leave a comment on said post. </p>
+					<p>If the User decides to click on the Herds tab, they will be able to see all the different Herds that they are a member of. When the User clicks on these Herds, it will open up a calendar, allowing them to see different events scheduled throughout the semester. This will range from University Herds, where it will show events the University is hosting, as well as Herds created by Students, where you will be able to see scheduled study hall hours, events, dress codes, RSVP for events and if necessary pay for events through the app. If the User happens to be the admin for a Herd, they will be able to add events to the calendar. Some Herds will be public and private, if public you would not need to be a member of the Herd to see posts and the calendar, however you would need to subscribe to the Herd and you would also not be able to create posts within that Herd or communicate via direct or group messaging within that Herd (Would also have the option to create a chat with members of the Herd, but would not be able to communicate directly in the Herd). If it is private, then you would need to be a member of the Herd to have access to what is listed above. In the Herds tab, if the User presses on the plus button they will be able to create a new Herd, and the name of it is up to the User’s preference. Once this new Herd is created, the User can then go back to the Home page where they will be able to see this new Herd highlighted in white at the top. Once there are posts from other members (or themselves) the User will be able to see this in the feed of that Herd. </p>
+					<p>In the Explore page, the User will be able to search for new Herds that they would like to be a member of. This is assuming that the Herd is public, if it is private the User will have to be invited to join the Herd, or request for permission to join the Herd. Through the Explore page, the User will also be able to search for things like University, GameDay and External Herd feeds. These things are fairly self-explanatory, they are information related to a given University, GameDay scores and when the games are scheduled, etc. and information that has been posted outside of a Herd. The User will also be able to search the Emergency System, to find any emergencies in their area that they should avoid. </p>
+					<p>Through our Event Handling System, we have the Calendar (explained above), Notification System and Study Hall feature. The User has the option to enable the Notification System, giving them updates on their Herds whether it is about new posts or changes to the Herd calendar. The Study Hall feature will enable students to schedule study hall hours within the Herd for their classes, allowing others to see it on the Herd calendar if other Users would like to join. Mentioned above there is also Payment, the User will be able to pay for events through Herds that are scheduled to the Herds calendar (that they have RSVPd for) through a secured payment system. </p>
+					<p>Within a Herd, a User will be able to create a Direct or Group message with other members of their Herd. This can be done simply by pressing on a user’s display name and selecting the option to create a direct message. If the User would like to add other members to this chat, then they would also click on their display name and add them to the already created chat. If sending a message to a User that is not a member of your Herd then you would repeat the steps listed above, however the User that is receiving the message would need to accept this message. This is to ensure that the User is comfortable receiving a message from a User that they do not know.</p>
+					<p>For certain features such as messaging, aspects of the Explore page and Event Handling System will utilize activity tracking. This will allow the User to see more content that they would like, ensuring the User has a pleasant experience when using Herds. Mentioned above, some aspects of Herds will be moderated to ensure that no inappropriate content slips through to dampen the Users experience. Herds will also be able to support iOS and Android devices, allowing people who own either device to utilize the app.</p>
 				</div>
 
 				<div class="meetings text-center"></div>
@@ -329,7 +397,7 @@
 						</tr>
 						<tr>
 							<td>Oct 25th 2024</td>
-							<td>Implementation overview, Report creation, Presentation creation, Group Zoom Call (Herds App Progress)</td>
+							<td>Stage 4 assigned, Implementation overview, Report creation, Presentation creation, Group Zoom Call (Herds App Progress)</td>
 						</tr>
 						<tr>
 							<td>Oct 27th 2024</td>
@@ -342,6 +410,54 @@
 						<tr>
 							<td>Oct 29th 2024</td>
 							<td>Final touches on report and presentation, Stage 3 submitted, Group Zoom call for any final touches </td>
+						</tr>
+						<tr>
+							<td>Oct 26th 2024 - Nov 5th 2024</td>
+							<td>Continued progress of Herds app, however we ensured to save the code from the point we had it for Stage 3, incase there were any major changes professor had to say regarding that current format. Also began brainstorming new interview questions.</td>
+						</tr>
+						<tr>
+							<td>Nov 6th 2024</td>
+							<td>Stage 3 Presentation</td>
+						</tr>
+						<tr>
+							<td>Nov 7th 2024</td>
+							<td>Reviewed feedback received from Stage 3 and continued to form interview questions.</td>
+						</tr>
+						<tr>
+							<td>Nov 8th 2024</td>
+							<td>Interview questions completed, to be sent out on Monday the 11th. Herds App progress based on stage 3 feedback. Group Zoom call to ensure members are on the same page.</td>
+						</tr>
+						<tr>
+							<td>Nov 11th 2024</td>
+							<td>Interviews sent out, Herds App progress, and User manual begins construction.</td>
+						</tr>
+						<tr>
+							<td>Nov 13th 2024</td>
+							<td>Interviews received, feedback used to upgrade Herds further and a summary will be made of the interviews. Continued construction of User manual.</td>
+						</tr>
+						<tr>
+							<td>Nov 15th 2024</td>
+							<td>Herds App progress, User manual completed. Continued construction of summary of interviews, Group Zoom meeting.</td>
+						</tr>
+						<tr>
+							<td>Nov 16th 2024</td>
+							<td>Herds App progress, summary of interviews completed, and construction of Installation section of report begins. (System Overview being written as well)</td>
+						</tr>
+						<tr>
+							<td>Nov 17th 2024</td>
+							<td>Herds App progress, Installation section of report in development, Stage 4 presentation in development. (System Overview being written as well)</td>
+						</tr>
+						<tr>
+							<td>Nov 18th 2024</td>
+							<td>Herds App near completion, Installation section of report completed, Stage 4 presentation near completion. (System Overview being written as well)</td>
+						</tr>
+						<tr>
+							<td>Nov 19th 2024</td>
+							<td>Herds App is finished, Stage 4 presentation is completed, and System Overview completed. Group Zoom call to ensure there are no missing parts for submission of Stage 4, and to make any last-minute touches.</td>
+						</tr>
+						<tr>
+							<td>Nov 22nd 2024</td>
+							<td>Herds Stage 4 Presentation.</td>
 						</tr>
 					</table>
 				</div>
